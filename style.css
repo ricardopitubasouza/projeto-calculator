@@ -1,0 +1,121 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Passion+One:wght@700&family=Righteous&family=Roboto:wght@300;400;700&family=Sarala&family=Source+Sans+Pro:wght@200&family=Sriracha&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.08em;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.calculator {
+    width: 500px;
+    height: 500px;
+    margin: 210px auto;  
+    padding-top: 1px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.267);
+}
+
+.input {
+    width: 450px;
+    height: 70px;
+    border: 1px solid #ddd;
+    margin: 15px auto;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+
+.input:hover {
+    border: 1px solid #bbb;
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.operators {
+    display: flex;
+    gap: 17px;
+    margin: 15px 25px 0px 25px;
+}
+
+.operators div {
+    background-color: #ddd;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.operators div:hover {
+    background-color: #ddd;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #aaa;
+}
+
+.operators div:active{
+    font-weight: bold;
+}
+
+.numbers {
+    display: flex;
+    gap: 17px;
+}
+
+.leftPanel {
+    width: 350px;
+    margin-left: 25px;
+}
+
+div {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    border: 1px solid #ddd;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-bottom: 18px;
+    transition: all .2s ease-in-out;
+}
+
+div:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #bbb;
+}
+
+div:active {
+    font-weight: bold;
+}
+
+.equal {
+    width: 100px;
+    height: 295px;
+    background-color: #4d90fe;
+    border: 1px solid #3079ED;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    border-radius: 3px;
+    float: right;
+    margin-right: 25px;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+}
+
+.equal:hover {
+    background-color: #307CF9;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #1857BB;
+}
+
+.equal:active {
+    font-weight: bold;
+}
